@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ==========================================
+                  Box Icons
+    =========================================== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ==========================================
+                  Custom CSS
+    =========================================== -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- ==========================================
+                  Breakpoint
+    =========================================== -->
+    <link rel="stylesheet" href="breakpoint.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!-- ==========================================
+                    Header
+    =========================================== -->
+    <header class="header">
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Skills</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- ==========================================
+                  Home Section
+    =========================================== -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Gayathra Chanith</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <div class="social-media">
+          <a href="https://web.facebook.com/gayathra.chanith/" target="_blank"><i class="bx bxl-facebook"></i></a>
+          <a href="https://github.com/Swagzilla007" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://www.instagram.com/chanith_7_0_7/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="https://www.linkedin.com/in/gayathra-chanith" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <!-- add link for your CV into `href` -->
+        <a href="https://drive.google.com/uc?export=download&id=1QY7eWkMOKhHFDFLzMK4Ltt7HG3ysOyOD" class="btn" target="_blank">Download CV</a>
+      </div>
+
+      <div class="home-img">
+        <img src="assets/image/Screenshot_20241102_175914_Snapchat.png" alt="home" />
+      </div>
+    </section>
+
+    <!-- ==========================================
+                  About Section
+    =========================================== -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="assets/image/Picsart_24-03-24_18-37-17-485.jpg" alt="about" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <p class="first-paragraph">
+          Hello there! I'm a Computer Science undergraduate at the Informatics Institute of
+          Technology (IIT) in Sri Lanka, affiliated with the University of Westminster, UK, specializing in Fullstack development and mobile/desktop
+          application development.
+        </p>
+        
+        <div class="hidden-content" id="more-content" style="display: none;">
+          <p>
+            My interest in technology started because I was passionate about solving problems and wanted to make the designs I saw in everyday digital interfaces, apps, and websites better. This enthusiasm eventually developed into a distinct goal: to create dependable, approachable software with slick, contemporary UI/UX elements that appeal to consumers.
+          </p>
+          
+          <p>
+            Beyond academics, I enjoy playing football and exploring fragrances. I love listening to Pop and rap music. I also enjoy reading and collecting comic books, which keeps me motivated and upbeat. These diverse interests frequently inspire concepts for innovative design and user-centered elements in my work.
+          </p>
+        </div>
+        <a href="#" class="btn" id="read-more-btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- ==========================================
+                  Services Section
+    =========================================== -->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Skills</span></h2>
+
+      <div class="skills-container">
+        <div class="skill-box">
+          <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML">
+          <h3>HTML</h3>
+        </div>
+        <div class="skill-box">
+          <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS">
+          <h3>CSS</h3>
+        </div>
+        <div class="skill-box">
+          <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" alt="Bootstrap">
+          <h3>Bootstrap</h3>
+        </div>
+        <div class="skill-box">
+          <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Python">
+          <h3>Python</h3>
+        </div>
+        <div class="skill-box">
+          <img src="https://cdn.worldvectorlogo.com/logos/java-4.svg" alt="Java">
+          <h3>Java</h3>
+        </div>
+        <div class="skill-box">
+          <img src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg" alt="JavaScript">
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-box">
+          <img src="https://www.vectorlogo.zone/logos/php/php-icon.svg" alt="PHP">
+          <h3>PHP</h3>
+        </div>
+        <div class="skill-box">
+          <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React">
+          <h3>React.js</h3>
+        </div>
+        <div class="skill-box">
+          <img src="https://cdn.worldvectorlogo.com/logos/nodejs-1.svg" alt="Node.js">
+          <h3>Node.js</h3>
+        </div>
+        <div class="skill-box">
+          <img src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" alt="MySQL">
+          <h3>MySQL</h3>
+        </div>
+        <div class="skill-box">
+          <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="MongoDB">
+          <h3>MongoDB</h3>
+        </div>
+        <div class="skill-box">
+          <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" alt="Express.js">
+          <h3>Express.js</h3>
+        </div>
+        <div class="skill-box">
+          <img src="https://cdn.worldvectorlogo.com/logos/flutter.svg" alt="Flutter">
+          <h3>Flutter</h3>
+        </div>
+        <div class="skill-box">
+          <img src="https://cdn.worldvectorlogo.com/logos/git-icon.svg" alt="Git">
+          <h3>Git</h3>
+        </div>
+        <div class="skill-box">
+          <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="Laravel">
+          <h3>Laravel</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+                  Portfolio Section
+    =========================================== -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">My <span>Projects</span></h2>
+      <p class="portfolio-instruction"><span>Tap on project boxes to see demo and repository links</span></p>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="assets/image/Logo main.png" alt="HoopKicks" />
+          <div class="portfolio-layer">
+            <div class="portfolio-links">
+              <a href="https://youtu.be/Jv40bsQYLkE" target="_blank"><i class='bx bxl-youtube'></i></a>
+              <a href="https://github.com/Swagzilla007/Hoopkicks" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+            <div class="tech-stack">
+              <span>React.js</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>MongoDB</span>
+              
+            </div>
+          </div>
+          <h4>HoopKicks</h4>
+          <p>
+            HoopKicks is an e-commerce platform specializing in premium sneakers. 
+           <span>   Built with MongoDB, Express.js, React, and Node.js, it features a modern UI, 
+            secure authentication, and comprehensive product and order management system.</span>
+          </p>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="assets/image/Patas.lk Logo-1.png" alt="Patas.lk" />
+          <div class="portfolio-layer">
+            <div class="portfolio-links">
+              <a href="https://www.youtube.com/watch?v=_uiKVX2Se2s" target="_blank"><i class='bx bxl-youtube'></i></a>
+              <a href="https://github.com/DilithRasanjana/Pataslk-" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+            <div class="tech-stack">
+              <span>Flutter</span>
+              <span>Firebase</span>
+
+              <span>Dart</span>
+            </div>
+          </div>
+          <h4>Patas.lk</h4>
+          <p>
+            A mobile application group project developing a provider platform connecting skilled professionals with customers.
+           <span>As the frontend developer, I implemented 
+            service booking, user profile, menu and all other screens and also real-time location tracking features.</span>
+          </p>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="assets/image/cineverse_logo.png" alt="CineVerse" />
+          <div class="portfolio-layer">
+            <div class="portfolio-links">
+              <a href="https://github.com/Swagzilla007/CineVerse" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+            <div class="tech-stack">
+              <span>Laravel</span>
+              <span>React.js</span>
+              <span>Chakra UI</span>
+              <span>Tailwind CSS</span>
+            </div>
+          </div>
+          <h4>CineVerse</h4>
+          <p>
+            A complete Cinema theatre management system with modern UI.
+            <span>Built with Laravel and React.js, featuring bookings for customers, 
+            screening management, movie schedules, and an admin dashboard for theatre operations.</span>
+          </p>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="assets/image/banner.webp" alt="Tropica" />
+          <div class="portfolio-layer">
+            <div class="portfolio-links">
+              <a href="https://youtu.be/WygzcawVKbQ" target="_blank"><i class='bx bxl-youtube'></i></a>
+              <a href="https://github.com/Swagzilla007/tropica" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+            <div class="tech-stack">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>jQuery</span>
+              <span>Bootstrap</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+          <h4>Tropica</h4>
+          <p>
+            A comprehensive hotel booking and reservation system with modern UI.
+            <span>Built with PHP and MySQL, featuring real-time room availability, room reservations
+             and intuitive booking & room management for adminstrators.</span>
+          </p>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="assets/image/hometeq.png" alt="HomeTeq" />
+          <div class="portfolio-layer">
+            <div class="portfolio-links">
+              <a href="https://youtu.be/erC-Ig90SZ0" target="_blank"><i class='bx bxl-youtube'></i></a>
+              <a href="https://github.com/Swagzilla007/Hometeq" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+            <div class="tech-stack">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+          <h4>HomeTeq</h4>
+          <p>
+            An e-commerce platform for home appliances and technological equipment.
+            <span>Built with PHP and MySQL, featuring product catalog, shopping cart, 
+            user authentication, and order management system.</span>
+          </p>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="https://api.oneworld.id/uploads/Real_Estate_i_Stock_edited_aae30f2583.jpg" alt="Property Search" />
+          <div class="portfolio-layer">
+            <div class="portfolio-links">
+              <a href="https://github.com/Swagzilla007/finding-homes" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+            <div class="tech-stack">
+              <span>React.js</span>
+              <span>JavaScript</span>
+              <span>CSS</span>
+              <span>HTML</span>
+            </div>
+          </div>
+          <h4>Property Search</h4>
+          <p>
+            A modern real estate website frontend developed as an advanced client-side coursework.
+            <span>Built with React.js, featuring property listings, search functionality, and 
+            responsive design for optimal user experience.</span>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+                  Contact Section
+    =========================================== -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class='bx bx-envelope'></i>
+          <h3>Email</h3>
+          <p>wkgayathra@gmail.com</p>
+        </div>
+
+        <div class="contact-item">
+          <i class='bx bx-phone'></i>
+          <h3>Phone</h3>
+          <p>+94 776390513</p>
+          <p>+94 778781244</p>
+        </div>
+
+        <div class="contact-item">
+          <i class='bx bx-map'></i>
+          <h3>Address</h3>
+          <p>No.1, Udayandaluwa,<br>Mugunuwatawana,<br>Chilaw</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+                    Footer
+    =========================================== -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2025 by Gayathra Chanith | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- ==========================================
+                  Scroll Reveal
+    =========================================== -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ==========================================
+                   Typed Js
+    =========================================== -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- ==========================================
+                  Custom Js
+    =========================================== -->
+    <script src="main.js"></script>
+  </body>
+</html>
