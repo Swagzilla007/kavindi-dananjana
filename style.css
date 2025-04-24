@@ -22,7 +22,7 @@
   --second-bg-color: #323946;
   --text-color: #ffffffe2;
 
-  --main-color: #00fbff;
+  --main-color: #fb57ed;/*#00fbff*/
   --transition: all 0.4s ease-in;
 }
 
@@ -150,11 +150,11 @@ section {
   /* margin-left: 800px;
   margin-top: -480px; */
   margin-top: 5rem;
-  margin-right: -5rem;
+  margin-right: -2rem; /* Changed from -5rem to move image slightly left */
   z-index: -1;
 }
 .home-img img {
-  width: 30vw; 
+  width: 13.6vw; /* Changed from 30vw to make image smaller */
   animation: floatImage 4s ease-in-out infinite;
   -webkit-animation: floatImage 4s ease-in-out infinite;
 }
@@ -380,6 +380,15 @@ span {
   height: 70px;
   margin-bottom: 1rem;
   transition: .5s ease;
+  object-fit: contain; /* Added to maintain aspect ratio */
+  padding: 5px; /* Added to give some space around the logo */
+}
+
+/* Added specific styling for MYOB logo */
+.skill-box img[alt="MYOB"] {
+  width: 90px;  /* Increased from 70px */
+  height: 90px; /* Increased from 70px */
+  padding: 8px;  /* Adjusted padding for larger size */
 }
 
 .skill-box:hover img {
@@ -523,7 +532,7 @@ span {
        (max-width: 430px),  /* iPhone 14 Pro Max */
        (max-device-width: 932px) { /* Target all mobile devices */
   .portfolio {
-    min-height: 450vh;
+    min-height: 100vh; /* Changed from 450vh to make it smaller */
     padding: 3rem 5% 2rem;
   }
   
@@ -546,6 +555,130 @@ span {
   margin-bottom: 2rem;
   font-size: 1rem;
   opacity: 0.8;
+}
+
+/* ==========================================
+              Career Timeline
+=========================================== */
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-box {
+  position: relative;
+  background: var(--second-bg-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: .2rem solid var(--bg-color);
+  transition: .5s ease;
+}
+
+.timeline-box:hover {
+  border-color: var(--main-color);
+  transform: scale(1.02);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.timeline-content h4 {
+  color: var(--main-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-content p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .timeline-container {
+    padding: 1rem;
+  }
+  
+  .timeline-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .timeline-content p {
+    font-size: 1rem;
+  }
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 2rem auto;
+  position: relative;
+  padding: 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: var(--main-color);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  position: relative;
+  width: 100%;
+  padding-left: 50%;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: var(--main-color);
+  border-radius: 50%;
+  left: calc(50% - 8px);
+  top: 0;
+}
+
+.timeline-item .date {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 45%;
+  padding-right: 30px;
+  text-align: right;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.timeline-item .content {
+  padding: 0 30px;
+  background: var(--second-bg-color);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.timeline-item .content h3 {
+  margin: 0 0 10px;
+  color: var(--text-color);
+  font-size: 1.2em;
+}
+
+.timeline-item .content p {
+  margin: 0;
+  line-height: 1.5;
+  color: var (--text-color);
 }
 
 /* ==========================================
@@ -620,66 +753,8 @@ span {
   margin-bottom: 1rem;
 }
 
-.contact-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.contact-item p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-  .contact-info {
-    gap: 2rem;
-  }
-  
-  .contact-item {
-    width: 100%;
-    max-width: 320px;
-  }
-}
-
-/* ==========================================
-              Footer
-=========================================== */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 1rem 9%;
-  background: var(--second-bg-color);
-}
-
-.footer-text p {
-  font-size: 1.1rem;
-}
-
-.footer-iconTop a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem;
-  background: var(--main-color);
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-  transition: 0.5s ease;
-  -webkit-transition: 0.5s ease;
-  -moz-transition: 0.5s ease;
-  -ms-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-}
-
-.footer-iconTop a:hover {
-  box-shadow: 0 0 1rem var(--main-color);
-}
 
 .footer-iconTop a i {
   font-size: 1.5rem;
-  color: var(--second-bg-color);
+  color: var (--second-bg-color);
 }

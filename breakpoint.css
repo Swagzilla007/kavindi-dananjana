@@ -197,12 +197,16 @@
   }
 
   .home-img {
-    margin-top: 15rem; /* Increased from 8rem */
+    margin-top: 8rem; /* Changed from 15rem to move image up */
     margin-right: -3.5rem;
   }
   .home-img img {
-    width: 45vw; /* Reduced from 65vw */
-    margin-bottom: 2rem;
+    width: 22vw; /* Changed from 45vw to make image smaller */
+    margin-bottom: 3.5rem;  /* Increased from 2rem to add more space between image and text */
+    margin-top: -6rem; /* Added negative margin to pull image up */
+  }
+  .home-content {
+    margin-top: -12rem;     /* Adjusted to reduce gap with image */
   }
   .home-content h1 {
     font-size: 2rem;
@@ -211,14 +215,15 @@
     font-size: 1.6rem;
   }
   .social-media {
-    margin-left: 1rem;
-    margin-bottom: -1rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;  /* Reduced from -1rem */
   }
   .social-media a {
-    width: 3.5rem;
-    height: 3.5rem;
-    margin-left: 0.8rem;
-    font-size: 2rem;
+    width: 2.8rem;         /* Reduced from 3.5rem */
+    height: 2.8rem;        /* Reduced from 3.5rem */
+    margin-left: 0.5rem;   /* Reduced from 0.8rem */
+    margin-bottom: 1rem;   /* Added to control vertical spacing */
+    font-size: 1.5rem;     /* Reduced from 2rem */
   }
   .btn {
     font-size: 1.5rem;
@@ -237,7 +242,7 @@
   }
   .portfolio-container {
     grid-template-columns: repeat(1, 1fr);
-    height: 3600px;  /* Increased from 2400px to accommodate all projects */
+    height: auto; /* Changed from fixed height to auto */
     gap: 2rem;
     padding: 0.5rem;
   }
@@ -301,14 +306,19 @@
     font-size: 1.4rem;
   }
   .home-img {
-    margin-top: 12rem;
+    margin-top: 6rem; /* Changed from 12rem to move image up */
   }
   .home-img img {
-    width: 40vw;
+    width: 20vw; /* Changed from 40vw to make image even smaller for smaller screens */
+    margin-top: -5rem; /* Added negative margin to pull image up */
+    margin-bottom: 3rem;    /* Added margin-bottom for smaller screens */
+  }
+  .home-content {
+    margin-top: -10rem;     /* Adjusted for smaller screens */
   }
   .social-media a {
-    margin-left: 0.1rem;
-    font-size: 1.6rem;
+    margin-left: 0.3rem;    /* Reduced from 0.1rem */
+    font-size: 1.4rem;      /* Reduced from 1.6rem */
   }
   .btn {
     font-size: 1.2rem;
@@ -318,7 +328,7 @@
     height: 70vw;
   }
   .portfolio-container {
-    height: 3900px;  /* Maintain same height for smaller screens */
+    height: auto; /* Changed from fixed height to auto */
   }
   .contact form textarea {
     height: 15rem;
