@@ -753,6 +753,56 @@ span {
   margin-bottom: 1rem;
 }
 
+/* ==========================================
+              Footer
+=========================================== */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: var(--second-bg-color);
+}
+
+.footer-text p {
+  font-size: 1.1rem;
+  text-align: center;
+  color: var(--text-color);
+  text-shadow: 0 0 0.5rem var(--main-color);
+}
+
+.footer-iconTop {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background: var(--main-color);
+  border-radius: 0.8rem;
+  transition: 0.5s ease;
+}
+
+.footer-iconTop:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a {
+  position: relative;
+  font-size: 1.5rem;
+  color: var(--second-bg-color);
+}
+
+@media (max-width: 430px) {
+  .footer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .footer-text p {
+    font-size: 0.9rem;
+  }
+}
 
 .footer-iconTop a i {
   font-size: 1.5rem;
