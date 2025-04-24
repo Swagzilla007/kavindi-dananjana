@@ -684,6 +684,11 @@ span {
 /* ==========================================
               Contact
 =========================================== */
+.contact {
+  min-height: 80vh; /* Reduced from 100vh */
+  padding: 5rem 9% 2rem;
+}
+
 .contact h2 {
   margin-bottom: 5rem;
 }
@@ -735,8 +740,9 @@ span {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 4rem;
-  margin-top: 3rem;
+  gap: 2rem; /* Reduced from 4rem */
+  margin-top: 2rem; /* Reduced from 3rem */
+  margin-bottom: 2rem; /* Added to control bottom spacing */
 }
 
 .contact-item {
@@ -751,6 +757,18 @@ span {
   font-size: 2.5rem;
   color: var(--main-color);
   margin-bottom: 1rem;
+}
+
+@media (max-width: 430px) {
+  .contact {
+    min-height: 70vh;  /* Reduced from 120vh */
+    padding-bottom: 4rem; /* Reduced from 8rem */
+  }
+
+  .contact-info {
+    margin-bottom: 2rem;  /* Reduced from 5rem */
+    padding-bottom: 1rem; /* Reduced from 3rem */
+  }
 }
 
 /* ==========================================
@@ -797,14 +815,32 @@ span {
   .footer {
     flex-direction: column;
     gap: 1.5rem;
+    padding: 1.5rem 5%;
   }
   
   .footer-text p {
     font-size: 0.9rem;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .footer-iconTop {
+    padding: 0.6rem;
+  }
+
+  .footer-iconTop a i {
+    font-size: 1.3rem;
   }
 }
 
 .footer-iconTop a i {
   font-size: 1.5rem;
   color: var (--second-bg-color);
+}
+
+@media (max-width: 391px) {
+  .contact {
+    min-height: 60vh;     /* Reduced from 130vh */
+    padding-bottom: 3rem; /* Reduced from 10rem */
+  }
 }

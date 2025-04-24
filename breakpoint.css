@@ -354,4 +354,13 @@
     min-height: 130vh;
     padding-bottom: 10rem;
   }
+  .footer {
+    padding: 1.2rem 5%;
+  }
+  .footer-iconTop {
+    padding: 0.5rem;
+  }
+  .footer-iconTop a i {
+    font-size: 1.2rem;
+  }
 }
